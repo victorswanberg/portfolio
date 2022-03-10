@@ -1,50 +1,15 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Global Styles */
 
 :root {
   --primary-white: #fff;
-  --primary-red: red;
-  --primary-dark: rgba(255,255,255,0)
+  --primary-red: #ef4035;
+  --primary-dark: rgba(255,255,255,0);
+  --primary-hover-red: #f33501;
 }
 
+body {
+  font-family: "Roboto Condensed" , sans-serif;
+}
 
 /****************Navbar*********************/
 .logo {
@@ -85,4 +50,54 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   height: 8rem;
+}
+
+/*************Header component*************/
+.header-wrapper {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/src/assets/header-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" , sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/*******Typed text*********/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-red);
+}
+/*******header main offer button*********/ 
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  color: var(--primary-red);
+  border: 1px solid var(--primary-white);
+  transition: 0.3s;
 }

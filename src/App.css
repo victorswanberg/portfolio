@@ -122,11 +122,16 @@ nav ul li {
 /* Particles */
 
 .particles-canvas {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
+
+#tsparticles canvas {
+  position: absolute !important;
+}
+
 
 @media(max-width:768px) {
   .particles-canvas {

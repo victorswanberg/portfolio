@@ -10,6 +10,7 @@ const Header = () => {
                 options={options}
             />
             <div className="main-info">
+              <div className="box-set">
                 <h1>Hello my name is Victor</h1> 
                 <Typed
                     className="typed-text"
@@ -17,8 +18,10 @@ const Header = () => {
                     typeSpeed={25}
                     backSpeed={25}
                     loop
-                /> 
-                <a href="#" className="btn-main-offer">Contact Me</a>  
+                />
+                <div className="mt-4 mb-4">
+                  <a href="#" className="btn-main-offer">Contact Me</a></div>  
+                </div>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const Header = () => {
             />
             <div className="main-info">
               <div className="box-set">
-                <h1>Hello my name is Victor</h1> 
+                <h1>Code Vibes by Victor Swanberg</h1> 
                 <Typed
                     className="typed-text"
                     strings={["Web developer", "E-learning developer", "Accessibility expert", "UX/UIX in mind", "Coding instuctor", "Peer mentor"]}

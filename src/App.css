@@ -235,14 +235,17 @@ text-transform: uppercase;
   box-shadow: 25px 25px 20px var(--primary-black);
   transform: translateY(-0.25em);
   transition: height .25s;
+
 }
 
 .services .box:hover .icon {
   color: var(--primary-black);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover .circle {
   background-color: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 /* Experience */
@@ -257,35 +260,7 @@ text-transform: uppercase;
   color: #000000;
 }
 
-.experience-wrapper::before {
-  position: absolute;
-  content:"";
-  top: 0;
-  left: 50%;
-  margin-left: -0.0625rem;
-  width: 0.125rem;
-  height: 100%;
-  background-color: var(--primary-dark-grey);
-  z-index: 1;
-}
-
-.timeline-block {
-  width: calc(50% + 0.5rem);
-  display: flex;
-  justify-content: space-between;
-  clear: both;
-}
-
-.timeline-block-right {
-  float: right;
-}
-
-.timeline-block-left {
-  float: left;
-  direction: rtl;
-}
-
-.marker {
+.marker-right, .marker-left {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -295,11 +270,21 @@ text-transform: uppercase;
   z-index: 3;
 }
 
+.marker-left {
+  margin-right: auto;
+  transform: translateX(-10px);
+}
+
+.marker-right {
+  margin-left: auto;
+  transform: translateX(10px);
+}
+
 .timeline-content {
   width: 95%;
   padding: 0 0.9375rem;
   color: var(--primary-black);
-  direction: ltr;
+ 
 }
 
 .timeline-content h3 {
@@ -310,7 +295,6 @@ text-transform: uppercase;
 
 /* Media */
 @media(max-width:768px) {
-
   .experience {
     padding: 0.75rem;
   }
@@ -319,18 +303,22 @@ text-transform: uppercase;
     padding-left: 0;
   }
 
-  .experience-wrapper::before {
-    left: 0.5rem;
-    margin-bottom: 1.875rem;
+  /* .row:nth-child(odd) .col-md-6{
+  box-shadow: none;
+  border-right: none;
+} 
+
+.row:nth-child(even) .col-md-6{
+  box-shadow: none;
+  border-right: none;
+} 
+
+  .marker-left  {
+    margin-left: auto;
+
   }
-  .timeline-block-right {
-    float: none;
-    width: 100%;
-  }
-  .timeline-block-left {
-    float: none;
-    direction: ltr;
-    width: 100%;
-  }
+  .marker-right {
+    margin-right: auto;
+  } */
 }
   

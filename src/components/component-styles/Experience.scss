@@ -1,0 +1,23 @@
+.experience {
+    .container {
+        .row {
+            padding: 0;
+            margin: 0;
+
+            .col-md-6 {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .row:nth-child(odd) {
+            .col-md-6{
+            box-shadow: 4px 0 0 0 grey;
+            }
+        }
+        .row:nth-child(even) {
+            .col-md-6{
+            border-left: 4px solid grey;
+            }
+        }
+    }
+}

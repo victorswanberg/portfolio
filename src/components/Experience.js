@@ -5,7 +5,7 @@ const Experience = () => {
         <div className="experience">
             <div className="d-flex justify-content-center my-5">
                 <h1>Experience</h1>
-        </div>
+            </div>
         <div className="container"> 
             <div className="row justify-content-start">
                 <div className="col-md-6">

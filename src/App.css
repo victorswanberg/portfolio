@@ -458,12 +458,12 @@ text-transform: uppercase;
 
 .testimonials .neon-text {
   color: #fff;
-  text-shadow:
-    /* White glow */
+  text-shadow: 
+  /* Red glow */
     0 0 7px rgb(255, 0, 0),
     0 0 10px rgb(255, 0, 0),
     0 0 21px rgb(255, 0, 0),
-    /* Red glow */
+   
     0 0 42px rgb(255, 0, 0),
     0 0 82px rgb(255, 0, 0),
     0 0 92px rgb(255, 0, 0),

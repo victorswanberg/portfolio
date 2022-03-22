@@ -486,3 +486,73 @@ text-transform: uppercase;
   color: var(--primary-light-grey);
   font-size: 1.2rem;
 }
+
+/* Inputs */
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-red);
+  outline: 0!important;
+  box-shadow: none!important;
+  top: 0;
+  margin-bottom: 1rem;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-red);
+  border-bottom: 0.125rem solid var(--primary-dark-grey) 
+}
+
+.contacts textarea {
+  height: 12.4rem!important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%; 
+}
+/* Why does this line not ease? */
+.line {
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  display: inline-block;
+  background: var(--primary-red);
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Media */
+@media(max-width:768px){
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container {
+    padding: 0 1rem;
+  }
+  .contacts p {
+    padding: 0 1rem;
+  } 
+}
+
+
+
+
+
+
+
+

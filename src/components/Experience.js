@@ -31,7 +31,7 @@ const Experience = () => {
                 </div>
                 </div>
                 {/* Add more blocks and swap between left and right */}
-                <div class="row justify-content-start">
+                <div className="row justify-content-start">
                 <div className="col-md-6">
                     <div className="marker-right"></div>
                     <div className="timeline-content">

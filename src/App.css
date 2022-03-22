@@ -515,16 +515,17 @@ text-transform: uppercase;
 }
 
 .contacts textarea {
-  height: 12.4rem!important;
+  height: 12.2rem!important;
 }
 
 .contact-btn {
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
   width: 100%; 
 }
-/* Why does this line not ease? */
+
 .line {
   position: relative;
+  top: -0.8rem;
   width: 0;
   height: 0.125rem;
   display: inline-block;
@@ -534,6 +535,14 @@ text-transform: uppercase;
 input:focus+.line, textarea:focus+.line {
   width: 100%;
   transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
 }
 
 /* Media */

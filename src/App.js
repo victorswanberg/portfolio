@@ -7,8 +7,8 @@ import Services from './components/Services';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselTestimonials from './components/CarouselTestimonials';
+import Contacts from './components/Contacts';
 
 
 
@@ -22,6 +22,7 @@ function App() {
       <Experience /> 
       <Portfolio />
       <Testimonials />
+      <Contacts />
     </>
   );
 }

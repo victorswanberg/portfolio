@@ -1,14 +1,26 @@
 import React, { useState } from 'react';
-import{ init } from '@emailjs/browser';
-import emailjs from '@emailjs/browser';
+import emailjs, { init } from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+// This is the schema, you use this to define validation rules.
+// Link to github repo https://github.com/jquense/yup 
+const schema = yup.object({
+  name: yup.string().required(),
+  phone: yup.string().required(),
+  email: yup.string().required(),
+  subject: yup.string().required(),
+  description: yup.string().min(30).max(255).required(),
+}).required();
 init("LD33pgKkeuGePRck7");
 
 const Contacts = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const { register, handleSubmit, errors } = useForm();
-  
-   const form = useState();
+  const { register, handleSubmit, formState:{ errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+  console.log({ errors });
+
 
   const serviceID = "service_x0qn78i";
   const templateID = "portfolio_request_work";
@@ -48,10 +60,15 @@ const Contacts = () => {
         </p>
       </div>
       <div className="container">
-        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="row">
             <div className="col-md-6 col-xs-12">
-              <div class="text-center">
+              <div>
+                <span className="error-message">
+                  {errors.name?.message}
+                </span>
+              </div>
+              <div className="text-center">
                 {/* Description input */}
                 <input
                 id="name"
@@ -59,9 +76,9 @@ const Contacts = () => {
                 placeholder="Name"
                 name="name"
                 type="text"
-                ref={
-                  register({
-                    required: "Please enter your name.",
+                {
+                  ...register("name" , {
+                    required: true,
                     maxLength: {
                       value:20,
                       message:"Please enter a name with less than 20 characters"
@@ -71,97 +88,98 @@ const Contacts = () => {
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">
-                {errors.name && errors.name.message}
-              </span>
-              <div class="text-center">
-                {/* Phone input */}
+              {/* Phone input */}
+              <div>
+                <span className="error-message">
+                  {errors.phone?.message}
+                </span>
+              </div>
+              <div className="text-center">
                 <input
                 id="phone"
                 className="form-control"
                 placeholder="Phone"
                 name="phone"
                 type="text"
-                ref={
-                  register({
-                    required: "Please add your phone number",
-                   
+                {
+                  ...register("phone" , {
+                    required: true,
                   })
                 }
                 />
                 <div className="line"></div>
+              </div>
+              {/* Email input */}
+              <div>
                 <span className="error-message">
-                {errors.phone && errors.phone.message}
+                  {errors.email?.message}
                 </span>
               </div>
-              <div class="text-center">
-                {/* Email input */}
+              <div className="text-center">
                 <input
                 id="email"
                 className="form-control"
                 placeholder="Email"
                 name="email"
                 type="email"
-                ref={
-                  register({
-                    required: "Please add your email address",
-                   
+                {
+                  ...register("email" , {
+                    required: true,
                   })
                 }
                 />  
-                {/* Need to validate email with a pattern??? */}
                 <div className="line"></div>
+              </div>
+                {/* Subject input */}
+              <div>
                 <span className="error-message">
-                {errors.email && errors.email.message}
+                {errors.subject?.message}
                 </span>
               </div>
-              <div class="text-center">
-                {/* Subject input */}
+              <div className="text-center">
                 <input
                 id="subject"
                 className="form-control"
                 placeholder="Subject"
                 name="subject"
                 type="text"
-                ref={
-                  register({
-                    required: "Please add a subject line",
-                   
+                {
+                  ...register("subject" , {
+                    required: true,
                   })
                 }
                 />
                 <div className="line"></div>
-                <span className="error-message">
-                {errors.subject && errors.subject.message}
-                </span>
               </div>
             </div>
             <div className="col-md-6 col-xs-12">
-            <div class="text-center">
               {/* Description text */}
+            <div>
+              <span className="error-message">
+                {errors.description?.message}
+              </span>
+            </div>
+            <div className="text-center">
               <textarea 
               id="description"
               className="form-control"
               placeholder="Please describe your project needs..."
               name="description"
               type="text"
-              ref={
-                register({
-                  required: "Please add a brief description", 
+              {
+                ...register("description" , {
+                  required: true,
                 })
               }
               />
               <div className="line"></div>
-              <span className="error-message">
-                {errors.description && errors.description.message}
-                </span>
-            </div>
-              <button className="btn-main-offer contact-btn" 
-              type="submit">
-                Contact Me
-              </button>
             </div>
           </div>
+        </div>
+          <button className="btn-main-offer contact-btn text-center" 
+            type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

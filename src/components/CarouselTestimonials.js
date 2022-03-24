@@ -8,7 +8,7 @@ import avatar3 from "../assets/testimonials-carousel/avatar-3.png";
 
 const CarouselTestimonials = () => {
     return (
-        <div class="container">
+        <div className="container">
             <div className="carousel-wrapper">
                 <Carousel
                 showArrows={true}

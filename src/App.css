@@ -1,4 +1,27 @@
 /* Global Styles */
+/* Color Theme Swatches in Hex */
+.Man-with-mask-holding-lightsaber-1-hex { color: #F20519; }
+.Man-with-mask-holding-lightsaber-2-hex { color: #D90B31; }
+.Man-with-mask-holding-lightsaber-3-hex { color: #730202; }
+.Man-with-mask-holding-lightsaber-4-hex { color: #260101; }
+.Man-with-mask-holding-lightsaber-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.Man-with-mask-holding-lightsaber-1-rgba { color: rgba(242, 4, 24, 1); }
+.Man-with-mask-holding-lightsaber-2-rgba { color: rgba(216, 10, 48, 1); }
+.Man-with-mask-holding-lightsaber-3-rgba { color: rgba(114, 2, 2, 1); }
+.Man-with-mask-holding-lightsaber-4-rgba { color: rgba(38, 0, 0, 1); }
+.Man-with-mask-holding-lightsaber-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Man-with-mask-holding-lightsaber-1-hsla { color: hsla(354, 96, 48, 1); }
+.Man-with-mask-holding-lightsaber-2-hsla { color: hsla(348, 90, 44, 1); }
+.Man-with-mask-holding-lightsaber-3-hsla { color: hsla(0, 96, 22, 1); }
+.Man-with-mask-holding-lightsaber-4-hsla { color: hsla(0, 96, 7, 1); }
+.Man-with-mask-holding-lightsaber-5-hsla { color: hsla(0, 0, 5, 1); }
+
+
+
 
 :root {
   --primary-white: #ffffff;
@@ -515,19 +538,19 @@ text-transform: uppercase;
 }
 
 .contacts textarea {
-  height: 12.2rem!important;
+  height: 16.8rem!important;
 }
 
 .contact-btn {
   margin: 2rem 0 0 0;
-  width: 100%; 
+  width: 25%; 
 }
 
 .line {
   position: relative;
-  top: -0.8rem;
+  top: -0.75rem;
   width: 0;
-  height: 0.125rem;
+  height: 0.2rem;
   display: inline-block;
   background: var(--primary-red);
 }
@@ -542,7 +565,7 @@ input.form-control {
 }
 
 textarea.form-control {
-  margin: -0.3rem 0;
+  margin: -0.4rem 0;
 }
 
 /* Media */
@@ -558,7 +581,12 @@ textarea.form-control {
   } 
 }
 
-
+.error-message {
+  color: var(--primary-white);
+  text-align: left;
+  padding-left: .75rem;
+  text-transform: capitalize;
+}
 
 
 

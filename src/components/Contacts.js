@@ -58,6 +58,7 @@ const Contacts = () => {
         <p className="px-3">
           Please fill out the form and describe your project needs and I'll contact you as soon as possible.
         </p>
+        <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -176,7 +177,7 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-          <button className="btn-main-offer contact-btn text-center" 
+          <button className="btn-main-offer contact-btn" 
             type="submit">
             Submit
           </button>

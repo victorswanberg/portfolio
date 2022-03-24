@@ -588,7 +588,9 @@ textarea.form-control {
   text-transform: capitalize;
 }
 
-
+.success-message {
+  color: green;
+}
 
 
 

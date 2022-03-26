@@ -1,4 +1,10 @@
 import React from 'react';
+import {  
+  FacebookIcon, 
+  FacebookShareButton, 
+  LinkedinIcon,
+  LineShareButton
+} from 'react-share'
 
 const Footer = () => {
   return (
@@ -33,6 +39,26 @@ const Footer = () => {
                 <a className="footer-nav">Contact</a>
               </div>
             </div>
+          </div>
+          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+            <div className="d-flex justify-content-center">
+              <FacebookShareButton
+                quote={"Front-end-developer"}
+                hashtag="#React.js"
+              >
+                <FacebookIcon className="mx-3" size={36} />
+              </FacebookShareButton>
+              <LineShareButton
+                quote={"Front-end-developer"}
+                hashtag="#React.js"
+              >
+                <LinkedinIcon className="mx-3" size={36} />
+              </LineShareButton>
+            </div>
+            <p className="pt-3 text-center">
+              Copyright&copy;
+              {new Date().getFullYear()}&nbsp;Code Vibes | All Rights Reserved
+            </p>
           </div>
         </div>
       </div>

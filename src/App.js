@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
 import CarouselTestimonials from './components/CarouselTestimonials';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Contacts />
+      <Footer />
     </>
   );
 }

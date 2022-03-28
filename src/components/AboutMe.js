@@ -3,7 +3,7 @@ import author from '../assets/vic.jpg';
 
 const AboutMe = () => {
     return (
-        <div className="container about-me py-5">
+        <div id="about-me" className="container about-me py-5">
             <div className="row no-gutter">
                 {/* Center when in mobile? */}
                 <div className="col-lg-6 col-xm-12 my-auto">

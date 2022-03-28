@@ -3,7 +3,7 @@ import {
   FacebookIcon, 
   FacebookShareButton, 
   LinkedinIcon,
-  LineShareButton
+  LinkedinShareButton
 } from 'react-share'
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">
-            <div class="row">
+            <div className="row">
               <div className="col">
                 <a className="footer-nav">Home</a>
                   <br />
@@ -43,17 +43,19 @@ const Footer = () => {
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
+                url={"www.victorswanberg.dev"}
                 quote={"Front-end-developer"}
                 hashtag="#React.js"
               >
                 <FacebookIcon className="mx-3" size={36} />
               </FacebookShareButton>
-              <LineShareButton
+              <LinkedinShareButton
+                url={"www.victorswanberg.dev"}
                 quote={"Front-end-developer"}
                 hashtag="#React.js"
               >
                 <LinkedinIcon className="mx-3" size={36} />
-              </LineShareButton>
+              </LinkedinShareButton>
             </div>
             <p className="pt-3 text-center">
               Copyright&copy;

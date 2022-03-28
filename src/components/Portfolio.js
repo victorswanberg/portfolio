@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Portfolio = () => {
     return(
-    <div className="portfolio-wrapper">
+    <div id="portfolio" className="portfolio-wrapper">
         <h1 className="text-uppercase text-center py-5">
             Portfolio    
         </h1>

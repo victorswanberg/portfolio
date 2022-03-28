@@ -4,7 +4,7 @@ import Particles from 'react-tsparticles';
 
 const Header = () => {
     return (
-        <div className="header-wrapper">
+        <div id="home" className="header-wrapper">
             <Particles
                 className="particles-canvas"
                 options={options}

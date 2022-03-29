@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faTwitter, faFontAwesome } from '@fortawesome/free-brand-svg-icons';
  import { faUniversalAccess , faGraduationCap , faArrowPointer , faFileCode } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -8,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Services = () => {
     return (
         <div id="services" className="services">
-            <h1 className="py-5">My services</h1>
+            <h1 className="py-5">Services</h1>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-6">
@@ -37,7 +36,7 @@ const Services = () => {
                                 <FontAwesomeIcon className="icon" icon={faGraduationCap} size="2x" />
                             </div>
                             <h3>E-Learning technology</h3>
-                            <p>Educating concepts using the addie model and learning theory.</p>
+                            <p>Educating concepts using the Addie model. Skilled in multiple E-learning tools</p>
                         </div>
                     </div>
                     {/* - */}

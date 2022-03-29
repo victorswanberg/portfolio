@@ -13,14 +13,12 @@ const Portfolio = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-6">
-             
                         <div className="portfolio-image-box">
                             <img className="portfolio-image" src={triplexxx} alt="triple xxx restraunt" />
                             <div className="overflow"></div>
                             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         </div>
                     </div>
-            
                     {/* - */}
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="portfolio-image-box">

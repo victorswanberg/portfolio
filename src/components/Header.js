@@ -20,7 +20,7 @@ const Header = () => {
                     loop
                 />
                 <div className="mt-4 mb-4">
-                  <a href="#" className="btn-main-offer">Contact Me</a></div>  
+                  <a href="#contact" className="btn-main-offer">Contact Me</a></div>  
                 </div>
             </div>
         </div>

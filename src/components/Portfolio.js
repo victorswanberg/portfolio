@@ -12,7 +12,7 @@ const Portfolio = () => {
         <div className="image-box-wrapper">     
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-md-6 mb-3">
                         <div className="portfolio-image-box">
                             <img className="portfolio-image" src={triplexxx} alt="triple xxx restraunt" />
                             <div className="overflow"></div>
@@ -20,7 +20,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-md-6 mb-3">
                         <div className="portfolio-image-box">
                             <img className="portfolio-image" src={triplexxx} alt="triple xxx restraunt" />
                             <div className="overflow"></div>
@@ -28,7 +28,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-md-6 mb-3">
                         <div className="portfolio-image-box">
                             <img className="portfolio-image" src={triplexxx} alt="triple xxx restraunt" />
                             <div className="overflow"></div>
@@ -36,7 +36,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     {/* - */}
-                    <div className="col-lg-3 col-md-6 col-sm-6">
+                    <div className="col-md-6 mb-3">
                         <div className="portfolio-image-box">
                             <img className="portfolio-image" src={triplexxx} alt="triple xxx restraunt" />
                             <div className="overflow"></div>

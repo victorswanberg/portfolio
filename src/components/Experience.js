@@ -3,7 +3,7 @@ import './component-styles/Experience.scss'
 const Experience = () => {
     return (
         <div id="experience" className="experience">
-            <div className="d-flex justify-content-center my-5">
+            <div className="text-center p-5">
                 <h1>My Journey</h1>
                 <p>With over 5 years of professional experience, I have had the pleasure of working with some of the greatest organizations in the world. I have met brilliant minds and learned about amazing tools. I feel that my expereince as an employee is more of a journy through life establishing my value and brand in the world.
                 </p>

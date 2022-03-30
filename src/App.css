@@ -333,7 +333,7 @@ text-transform: uppercase;
   font-weight: 900;
 }
 
-/* Media */
+/* Media
 @media(max-width:768px) {
   .experience {
     padding: 0.75rem;
@@ -341,7 +341,7 @@ text-transform: uppercase;
 
   .experience .container {
     padding-left: 0;
-  }
+  } */
 
   /* .row:nth-child(odd) .col-md-6{
   box-shadow: none;
@@ -359,8 +359,8 @@ text-transform: uppercase;
   }
   .marker-right {
     margin-right: auto;
-  } */
-}
+  }
+} */
 
 /* Portfolio */
 /* Help on mobile~! */
@@ -370,17 +370,17 @@ text-transform: uppercase;
 }
 
 .portfolio-image {
-  width: 15rem;
+  width: 100%;
   border: 3px solid black;
   cursor: pointer;
   padding: .325rem;
 }
   
-.portfolio-image-box {
+/* .portfolio-image-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding:1em;
-}
+} */
 
 /* Overflow */
 /* Why is this not showing up either? */
@@ -414,8 +414,10 @@ text-transform: uppercase;
 
 .testimonials {
   background-image: url('assets/testimonials-carousel/testimonials-bg.jpg');
-  background-size: cover;
+  background-size: 120%;
   background-color: var(--primary-black);
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding-bottom: 4rem;
   margin-bottom: 0;

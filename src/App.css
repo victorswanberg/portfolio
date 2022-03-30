@@ -20,9 +20,6 @@
 .Man-with-mask-holding-lightsaber-4-hsla { color: hsla(0, 96, 7, 1); }
 .Man-with-mask-holding-lightsaber-5-hsla { color: hsla(0, 0, 5, 1); }
 
-
-
-
 :root {
   --primary-white: #ffffff;
   --primary-red: #ef4035;
@@ -283,9 +280,9 @@ text-transform: uppercase;
 }
 
 /* Experience */
-.experience {
+/* .experience {
   padding-bottom: 1rem;
-}
+} */
 
 
 
@@ -603,11 +600,15 @@ textarea.form-control {
 
 .footer a {
   text-decoration: none;
-  color: var(--primary-red);
+  color: var(--primary-white);
   cursor: pointer;
 }
 
 .footer p {
   margin-bottom: 0;
+  color: var(--primary-white);
 }
 
+.footer a:hover {
+  color: var(--primary-hover-red);
+}

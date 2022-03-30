@@ -13,30 +13,30 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-6">
             <div className="d-flex">
-              <p>City Everett WA  </p>
+              <p>City of Everett, WA 98204</p>
             </div>
             <div className="d-flex">
               <a href="tel:425-773-8165">425-773-8165</a>
             </div>
             <div className="d-flex">
-              <p>victorswanberg89@gmail.com</p>
+              <a href="mailto:codevibesconsulting@gmail.com">codevibesconsulting@gmail.com</a>
             </div>
           </div>
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <a href="#home" className="footer-nav">Home</a>
                   <br />
-                <a className="footer-nav">About</a>
+                <a href="#about-me" className="footer-nav">About Me</a>
                   <br />
-                <a className="footer-nav">Services</a>
+                <a href="#services" className="footer-nav">Services</a>
               </div>
               <div className="col">
-                <a className="footer-nav">Experience</a>
+                <a href="#experience" className="footer-nav">Experience</a>
                   <br />
-                <a className="footer-nav">Portfolio</a>
+                <a href="#portfolio" className="footer-nav">Portfolio</a>
                   <br />
-                <a className="footer-nav">Contact</a>
+                <a href="#contact" className="footer-nav">Contact</a>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <FacebookIcon className="mx-3" size={36} />
               </FacebookShareButton>
               <LinkedinShareButton
-                url={"www.victorswanberg.dev"}
+                url={"https://www.linkedin.com/in/victor-swanberg/"}
                 quote={"Front-end-developer"}
                 hashtag="#React.js"
               >

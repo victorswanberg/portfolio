@@ -1,0 +1,100 @@
+
+/*************Header component*************/
+.header-wrapper {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../assets/header/header-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" , sans-serif;
+  z-index: 4;
+}
+
+.box-set {
+  border: 3px var(--primary-red) solid;
+  background-color: black;
+  border-radius: 10px;
+  padding: 1em;
+  background: var(--primary-transparent-black);
+
+}
+.main-info h1 {
+  color: #fff;
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 21px rgb(255, 0, 0),
+    /* Red glow */
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(255, 0, 0),
+    0 0 92px rgb(255, 0, 0),
+    0 0 102px rgb(255, 0, 0),
+    0 0 151px rgb(255, 0, 0);
+  text-transform: uppercase;
+}
+
+/*******Typed text*********/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-red);
+}
+
+@media(max-width:768px) {
+  .typed-text {
+    font-size: 1.7rem;
+  }
+}
+/*******header main offer button*********/ 
+
+.btn-main-offer {
+  border: 3px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  transition: 0.3s;
+  z-index: 3;
+  text-decoration: none;
+  background-color: black;
+}
+
+.btn-main-offer:hover {
+  color: var(--primary-red);
+  border: 3px solid var(--primary-white);
+  transition: 0.3s;
+  z-index: 3;
+}
+
+/* Particles */
+
+.particles-canvas {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#tsparticles canvas {
+  position: absolute !important;
+}
+
+
+@media(max-width:768px) {
+  .particles-canvas {
+    display:none;
+  }
+}

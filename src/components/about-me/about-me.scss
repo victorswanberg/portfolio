@@ -2,25 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
-
-.profile-img {
-  width: 20rem;
-  padding: 0.3rem;
-  border: 1px solid var(--primary-red);
-  border-radius: 50%;
+    .profile-header {
+    text-transform: uppercase;
+    }
+    .profile-img {
+    width: 20rem;
+    padding: 0.3rem;
+    border: 1px solid var(--primary-red);
+    border-radius: 50%;
+  }
+    @media(max-width: 468px) {
+      .profile-img{
+        width: 10rem;
+      }
+      .photo-wrapper {
+        padding-bottom:1.25rem;
+      }
+    }
 } 
 
-.profile-header {
-text-transform: uppercase;
-}
 
-@media(max-width: 468px) {
-  .profile-img{
-    width: 10rem;
-  }
-  .photo-wrapper {
-    padding-bottom:1.25rem;
-  }
-}
+

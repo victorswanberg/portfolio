@@ -21,8 +21,9 @@ const Header = () => {
                     loop
                 />
                 <div className="mt-4 mb-4">
-                  <a href="#contact" className="btn-main-offer">Contact Me</a></div>  
-                </div>
+                  <a href="#contact" className="btn-main-offer">Contact Me</a>
+                </div>  
+              </div>
             </div>
         </div>
     )

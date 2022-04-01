@@ -1,44 +1,32 @@
 /****************Navbar*********************/
-.logo {
-  width: 7.25rem;
-}
-
 nav {
   z-index: 2;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: end;
-}
-
-/****************Nav link*********************/
-nav a.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.375rem;
-  cursor: pointer;
-}
-
-nav ul li {
-  text-transform: uppercase;
-}
-
-.navbar-nav > li > a {
-  margin-right: .75rem;
-  margin-left: .75rem;
-  border-top: 0.175rem solid var(--primary-dark);
-}
-
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-bottom: 0.175rem solid var(--primary-red);
-  /* not sure about why the active state is like this come back */
-}
-
-.navbar-nav > li > a:hover {
-  border-bottom: 0.175rem solid var(--primary-red);
-  /* add more annimation here */
-}
-
-.navbar-brand {
-  max-width: 17.25rem;
-  height: 8rem;
+    &.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+  }
+  .container {
+    .navbar-brand {
+      max-width: 17.25rem;
+      height: 8rem;
+        .logo {
+          width: 7.25rem;
+        }
+    }
+  }
+  /****************Nav link*********************/
+  ul li {
+    text-transform: uppercase;
+      a.nav-link {
+        margin-right: .75rem;
+        margin-left: .75rem;
+        border-top: 0.175rem solid var(--primary-dark); 
+        font-weight: 500;
+        letter-spacing: 0.375rem;
+        cursor: pointer;
+        // Change it to active in nav when first visit/
+          &:hover, &:active, &:focus {
+            border-bottom: 0.175rem solid var(--primary-red);
+          }
+      }
+  }
 }

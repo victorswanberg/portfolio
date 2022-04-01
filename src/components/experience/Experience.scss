@@ -1,13 +1,43 @@
 .experience {
+  h1 {
+    text-transform: uppercase;
+    color: #000000;
+  }
     .container {
         .row {
             padding: 0;
             margin: 0;
-
             .col-md-6 {
                 padding: 0;
                 margin: 0;
-            }
+                  .marker-right {
+                    margin-left: auto;
+                    transform: translateX(10px);
+                  }
+                  .marker-right, .marker-left {
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    border: 0.3125rem solid var(--primary-dark);
+                    background: var(--primary-red);
+                    margin-top: 0.625rem;
+                    z-index: 3;
+                  }
+                  .marker-left {
+                    margin-right: auto;
+                    transform: translateX(-10px);
+                  }
+                  .timeline-content {
+                    width: 95%;
+                    padding: 0 0.9375rem;
+                    color: var(--primary-black);
+                      h3 {
+                        margin-top: 0.3125rem;
+                        color: var(--primary-hover-red);
+                        font-weight: 900;
+                      }
+                  }
+            }  
         }
         .row:nth-child(odd) {
             .col-md-6 {
@@ -35,47 +65,3 @@
         }
     }
 }
-
-.experience-wrapper {
-    position:absolute;
-    padding: 3.125rem;
-    overflow:hidden;
-  }
-  
-  .experience h1 {
-    text-transform: uppercase;
-    color: #000000;
-  }
-  
-  .marker-right, .marker-left {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: 0.3125rem solid var(--primary-dark);
-    background: var(--primary-red);
-    margin-top: 0.625rem;
-    z-index: 3;
-  }
-  
-  .marker-left {
-    margin-right: auto;
-    transform: translateX(-10px);
-  }
-  
-  .marker-right {
-    margin-left: auto;
-    transform: translateX(10px);
-  }
-  
-  .timeline-content {
-    width: 95%;
-    padding: 0 0.9375rem;
-    color: var(--primary-black);
-   
-  }
-  
-  .timeline-content h3 {
-    margin-top: 0.3125rem;
-    color: var(--primary-hover-red);
-    font-weight: 900;
-  }

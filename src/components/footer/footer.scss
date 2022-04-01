@@ -2,19 +2,20 @@
   background: var(--primary-black);
   color: var(--primary-dark-grey);
   padding: 3rem;
+  p {
+    margin-bottom: 0;
+    color: var(--primary-white);
+  }
+  a {
+    text-decoration: none;
+    color: var(--primary-white);
+    cursor: pointer;
+      &:hover {
+        color: var(--primary-hover-red);
+      }
+  } 
 }
 
-.footer a {
-  text-decoration: none;
-  color: var(--primary-white);
-  cursor: pointer;
-}
 
-.footer p {
-  margin-bottom: 0;
-  color: var(--primary-white);
-}
 
-.footer a:hover {
-  color: var(--primary-hover-red);
-}
+

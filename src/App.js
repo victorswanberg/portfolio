@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar/Navbar';
+import ScrollButton from './components/scroll-btn/ScrollButton';
 import Header from './components/header/Header';
 import AboutMe from './components/about-me/AboutMe';
 import Services from './components/services/Services';
@@ -23,6 +24,7 @@ function App() {
       <Testimonials />
       <Contacts />
       <Footer />
+      <ScrollButton />
     </>
   );
 }

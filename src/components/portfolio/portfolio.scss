@@ -1,7 +1,10 @@
 /* Portfolio */
 .portfolio-wrapper {
-  background-color: var(--primary-dark-grey);
+  background-color: var(--primary-dark);
   padding: 3rem 0;
+  h1 {
+    color:var(--primary-white);
+  }
 }
 
 .portfolio-image {

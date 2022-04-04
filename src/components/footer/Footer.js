@@ -13,18 +13,18 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
-            <div className="d-flex">
+          <div className="col-lg-4 col-md-6 col-sm-6 mb-5 mb-md-0">
+            <div>
               <p>City of Everett, WA 98204</p>
             </div>
-            <div className="d-flex">
+            <div>
               <a href="tel:425-773-8165">425-773-8165</a>
             </div>
-            <div className="d-flex">
+            <div>
               <a href="mailto:codevibesconsulting@gmail.com">codevibesconsulting@gmail.com</a>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
+          <div className="col-lg-3 col-md-2 col-sm-6 mb-5 mb-md-0">
             <div className="row">
               <div className="col">
                 <a href="#home" className="footer-nav">Home</a>
@@ -42,8 +42,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-            <div className="d-flex justify-content-center">
+          <div className="col-lg-5 col-md-5 col-sm-6 text-center align-items-center">
+            <div>
               <FacebookShareButton
                 url={"www.victorswanberg.dev"}
                 quote={"Front-end-developer"}

@@ -178,10 +178,14 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-          <button className="btn-main-offer contact-btn" 
-            type="submit">
-            Submit
-          </button>
+        <div className="row">
+          <div className="col text-center">
+            <button className="btn-main-offer contact-btn" 
+              type="submit">
+              Submit
+            </button> 
+            </div>
+          </div>
         </form>
       </div>
     </div>

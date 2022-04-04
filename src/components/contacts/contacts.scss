@@ -1,17 +1,37 @@
 .contacts {
   background:  var(--primary-dark);
   padding: 3rem 0;
-}
-
-.contacts h1 {
-  color: var(--primary-white);
-  padding: 3rem 0;
-  text-transform: uppercase;
-}
-
-.contacts p {
-  color: var(--primary-light-grey);
-  font-size: 1.2rem;
+    h1 {
+      color: var(--primary-white);
+      padding: 3rem 0;
+      text-transform: uppercase;
+    }
+    p {
+      color: var(--primary-light-grey);
+      font-size: 1.2rem;
+    }
+    .success-message {
+      color: green;
+    }
+    .error-message {
+      color: var(--primary-red);
+      text-align: left;
+      padding-left: .75rem;
+      text-transform: capitalize;
+    }
+    .container {
+          padding: 4rem 0;
+    }
+    /* Media */
+    @media(max-width:768px){
+        overflow-x: hidden;
+        .container {
+          padding: 0 1rem;
+        }
+        p {
+          padding: 0 1rem;
+        } 
+    }
 }
 
 /* Inputs */
@@ -28,26 +48,36 @@
   box-shadow: none!important;
   top: 0;
   margin-bottom: 1rem;
+  &:focus {
+    background: transparent;
+    color: var(--primary-red);
+    border-bottom: 0.125rem solid var(--primary-dark-grey) 
+  }
 }
 
-.contacts .container {
-  padding: 4rem 0;
-
-}
-
-.contacts input:focus, .contacts textarea:focus {
-  background: transparent;
-  color: var(--primary-red);
-  border-bottom: 0.125rem solid var(--primary-dark-grey) 
-}
-
-.contacts textarea {
+  textarea {
   height: 16.8rem!important;
 }
 
 .contact-btn {
   margin: 2rem 0 0 0;
-  width: 25%; 
+  width: 25%;
+  border: 3px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  transition: 0.3s;
+  z-index: 3;
+  text-decoration: none;
+  background-color: black;
+    &:hover {
+      color: var(--primary-red);
+      border: 3px solid var(--primary-white);
+      transition: 0.3s;
+      z-index: 3;
+  }
 }
 
 .line {
@@ -72,26 +102,6 @@ textarea.form-control {
   margin: -0.4rem 0;
 }
 
-/* Media */
-@media(max-width:768px){
-  .contacts {
-    overflow-x: hidden;
-  }
-  .contacts .container {
-    padding: 0 1rem;
-  }
-  .contacts p {
-    padding: 0 1rem;
-  } 
-}
 
-.error-message {
-  color: var(--primary-white);
-  text-align: left;
-  padding-left: .75rem;
-  text-transform: capitalize;
-}
 
-.success-message {
-  color: green;
-}
+

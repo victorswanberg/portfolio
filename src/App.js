@@ -11,23 +11,43 @@ import Testimonials from './components/carousel-testimonials/Testimonials';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import SideGadget from './components/side-gadget/SideGadget';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
+
+function Home () {
+  return     <>
+  <Navbar />
+  <Header />
+  <AboutMe />
+  <Services />
+  <Experience /> 
+  <Portfolio />
+  <Testimonials />
+  <Contacts />
+  <ScrollButton />
+  <SideGadget />
+  <Footer />
+</>
+}
+
+function getIframe () {
+  return {
+    __html: '<iframe style="position: absolute; height: 100%; width: 100%; border: none" src="/project-examples/triple_x_project/home.html"> width="100vw" heigh="100vh"</iframe>'
+  }
+}
+function MyProject () {
+  console.log(getIframe());
+  return <div dangerouslySetInnerHTML={getIframe()}/>
+}
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Header />
-      <AboutMe />
-      <Services />
-      <Experience /> 
-      <Portfolio />
-      <Testimonials />
-      <Contacts />
-      <ScrollButton />
-      <SideGadget />
-      <Footer />
-    </>
+    <HashRouter>
+      <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/portfolio' element={<MyProject />} />
+    </Routes>
+    </HashRouter>
   );
 }
 

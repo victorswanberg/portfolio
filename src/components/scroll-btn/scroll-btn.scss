@@ -5,17 +5,17 @@
   
 .scroll-btn {
    position: fixed; 
+   display: flex;
    font-size: 1.5rem;
    z-index: 1;
    color: green;
    right: 5%;
    bottom: 5%;
-   background-color: transparent;
+   background-color: #000000;
    border: none;
    &:hover, &:focus{
-    background-color: transparent;
-    color: var(--primary_dark);
     outline: none;
+    background-color: #000000;
    }
 
 }

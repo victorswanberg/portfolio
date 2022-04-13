@@ -1,0 +1,57 @@
+.gadget-group {
+  position: fixed;
+  left:0;
+  top:50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transform: translateY(-50%);
+  .btn {
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 65px;
+    border-radius: 0;
+    border: none;
+    &.linked-in {
+      background-color: #0072b1;
+      svg {
+        margin-right: 5px;
+      }
+    }
+    &.github {
+      background-color: #24292f;
+      svg {
+        margin-left: 5px;
+      }
+    }
+    &.resume-download {
+      background-color: var(--primary-red);
+    }
+      &:hover {
+        width: 150px;
+        span {
+          margin-left:0px;
+          opacity: 1;
+        }
+      }
+      span {
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.5s;
+        opacity: 0;
+        margin-left:-65px;
+      }
+      svg {
+        height: 2em;
+      }
+    }
+
+    @media(max-width: 675px) {
+      display: none;
+    }
+
+
+}
+

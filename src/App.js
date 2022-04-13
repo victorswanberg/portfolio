@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/carousel-testimonials/Testimonials';
 import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
+import SideGadget from './components/side-gadget/SideGadget';
 
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Contacts />
-      <Footer />
       <ScrollButton />
+      <SideGadget />
+      <Footer />
     </>
   );
 }

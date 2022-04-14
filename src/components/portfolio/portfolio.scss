@@ -1,42 +1,81 @@
 /* Portfolio */
 .portfolio-wrapper {
   background-color: var(--primary-dark);
-  padding: 3rem 0;
+  overflow-x: hidden;
+  padding: 0rem 4rem;
+    @media (max-width: 675px){
+      padding: 2rem;
+      .btn {
+        margin-bottom: 1rem;
+      }
+    }
+
   h1 {
-    color:var(--primary-white);
+    text-transform: uppercase;
+    text-decoration: overline;
+    color: var(--primary-red);
   }
 }
 
-.portfolio-image {
-  width: 100%;
-  border: 3px solid black;
-  cursor: pointer;
-  padding: .325rem;
+// .portfolio-image {
+//   width: 100%;
+//   border: 3px solid black;
+//   cursor: pointer;
+//   padding: .325rem;
+// }
+  
+// .overflow {
+//   position: absolute;
+//   opacity: 0;
+//   background: var(--primary-black);
+//   width: 15rem;
+//   height: 8rem;
+//   top: 0;
+//   border: 1px solid var(--primary-red);
+//   cursor: pointer;
+// }
+
+// /* Portfolio Icons */
+// .portfolio-icon {
+//   position:absolute;
+//   opacity: 0;
+//   color: var(--primary-white);
+//   font-size: 1.5rem;
+//   margin-left: -8rem;
+//   margin-top:3.6rem;
+// }
+
+// .portfolio-image-box:hover .portfolio-icon {
+//   opacity: 70%;
+//   transition: 0.3s ease-in-out;
+//   cursor: pointer;
+// }
+.card {
+  background-color: var(--primary-slate-grey);
+  .btn {
+    border: 3px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primary-white);
+    transition: 0.3s;
+    z-index: 3;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+      &:hover {
+        color: var(--primary-red);
+        border: 3px solid var(--primary-white);
+        transition: 0.3s;
+        z-index: 3;
+      }
+  }
 }
   
-.overflow {
-  position: absolute;
-  opacity: 0;
-  background: var(--primary-black);
-  width: 15rem;
-  height: 8rem;
-  top: 0;
-  border: 1px solid var(--primary-red);
-  cursor: pointer;
-}
 
-/* Portfolio Icons */
-.portfolio-icon {
-  position:absolute;
-  opacity: 0;
-  color: var(--primary-white);
-  font-size: 1.5rem;
-  margin-left: -8rem;
-  margin-top:3.6rem;
-}
-
-.portfolio-image-box:hover .portfolio-icon {
-  opacity: 70%;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
+// CSS tester
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }

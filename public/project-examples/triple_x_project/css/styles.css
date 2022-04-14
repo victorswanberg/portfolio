@@ -62,7 +62,7 @@ a, a:hover {
   }
   
   #home {
-    background-image: url(/img/OldRestraunt.png);
+    background-image: url(../img/OldRestraunt.png);
     background-position: center center;background-attachment: fixed;
     background-size: contain;
     width: 100%;
@@ -187,7 +187,7 @@ a, a:hover {
   
   /*Reasons to Visit Us start*/
   .reason-to-visit {
-    background-image: url(/img/banner-filtert.jpg);
+    background-image: url(../img/banner-filtert.jpg);
     background-size: contain;
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ a, a:hover {
   
   /*paralalxeffect start*/
   .proud {
-    background-image: url(/img/Capture16.JPG);
+    background-image: url(../img/Capture16.JPG);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;}

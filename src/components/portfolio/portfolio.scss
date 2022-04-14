@@ -1,8 +1,7 @@
 /* Portfolio */
 .portfolio-wrapper {
   background-color: var(--primary-dark);
-  overflow-x: hidden;
-  padding: 0rem 4rem;
+  padding: 3em;
     @media (max-width: 675px){
       padding: 2rem;
       .btn {
@@ -16,40 +15,6 @@
     color: var(--primary-red);
   }
 }
-
-// .portfolio-image {
-//   width: 100%;
-//   border: 3px solid black;
-//   cursor: pointer;
-//   padding: .325rem;
-// }
-  
-// .overflow {
-//   position: absolute;
-//   opacity: 0;
-//   background: var(--primary-black);
-//   width: 15rem;
-//   height: 8rem;
-//   top: 0;
-//   border: 1px solid var(--primary-red);
-//   cursor: pointer;
-// }
-
-// /* Portfolio Icons */
-// .portfolio-icon {
-//   position:absolute;
-//   opacity: 0;
-//   color: var(--primary-white);
-//   font-size: 1.5rem;
-//   margin-left: -8rem;
-//   margin-top:3.6rem;
-// }
-
-// .portfolio-image-box:hover .portfolio-icon {
-//   opacity: 70%;
-//   transition: 0.3s ease-in-out;
-//   cursor: pointer;
-// }
 .card {
   background-color: var(--primary-slate-grey);
   .btn {
@@ -72,7 +37,6 @@
   }
 }
   
-
 // CSS tester
 // * {
 //   background: #000 !important;

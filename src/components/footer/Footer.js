@@ -5,7 +5,8 @@ import {
   FacebookIcon, 
   FacebookShareButton, 
   LinkedinIcon,
-  LinkedinShareButton
+  LinkedinShareButton,
+  
 } from 'react-share'
 
 const Footer = () => {

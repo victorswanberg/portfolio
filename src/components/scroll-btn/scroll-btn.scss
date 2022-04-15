@@ -8,14 +8,14 @@
    display: flex;
    font-size: 1.5rem;
    z-index: 1;
-   color: green;
+   color: var(--primary-hover-red);
    right: 5%;
    bottom: 5%;
-   background-color: #000000;
+   background-color: var(--primary-black);
    border: none;
    &:hover, &:focus{
     outline: none;
-    background-color: #000000;
+    background-color: var( --primary-black);
    }
 
 }

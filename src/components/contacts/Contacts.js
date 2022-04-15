@@ -78,6 +78,7 @@ const Contacts = () => {
                 placeholder="Name"
                 name="name"
                 type="text"
+                label="Name"
                 {
                   ...register("name" , {
                     required: true,
@@ -103,6 +104,7 @@ const Contacts = () => {
                 placeholder="Phone"
                 name="phone"
                 type="text"
+                label="Phone"
                 {
                   ...register("phone" , {
                     required: true,
@@ -124,6 +126,7 @@ const Contacts = () => {
                 placeholder="Email"
                 name="email"
                 type="email"
+                label="Email"
                 {
                   ...register("email" , {
                     required: true,
@@ -145,6 +148,7 @@ const Contacts = () => {
                 placeholder="Subject"
                 name="subject"
                 type="text"
+                lable="Subject"
                 {
                   ...register("subject" , {
                     required: true,
@@ -168,6 +172,7 @@ const Contacts = () => {
               placeholder="Please describe your project needs..."
               name="description"
               type="text"
+              label="Please describe your project needs"
               {
                 ...register("description" , {
                   required: true,

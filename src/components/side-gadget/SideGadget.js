@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaLinkedin, FaGithub, FaFile} from 'react-icons/fa';
+import {FaLinkedin, FaGithub, FaFileDownload} from 'react-icons/fa';
 import './side-gadget.scss'
 import {Button} from 'react-bootstrap';
 
@@ -16,7 +16,7 @@ const Gadget = () => {
           </Button>
           <Button href="/resume/resume(fy22).pdf" target='_blank' className="resume-download">
             <span className="px-1">Resume</span>
-            <FaFile />
+            <FaFileDownload />
           </Button>
       </div>
   )

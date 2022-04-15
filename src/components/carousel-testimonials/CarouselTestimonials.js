@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import avatar1 from "../../assets/testimonials-carousel/avatar-1.png";
 import avatar2 from "../../assets/testimonials-carousel/avatar-2.png";
 import avatar3 from "../../assets/testimonials-carousel/avatar-3.png";
+import Fade from 'react-reveal/Fade';
 
 
 const CarouselTestimonials = () => {
@@ -19,7 +20,9 @@ const CarouselTestimonials = () => {
                 >
                 <>
                 <div>
+                    <Fade>
                     <img src={avatar1} alt="Avatar with glasses" />
+                    </Fade>
                     <div className="custom-carousel">
                         <h3>Kai Warren</h3>
                         <p className="px-3 px-md-0">
@@ -30,7 +33,9 @@ const CarouselTestimonials = () => {
                 </>
                 <>
                 <div>
+              
                     <img src={avatar3} alt="Avatar with beard" />
+               
                     <div className="custom-carousel">    
                         <h3>Andrew Davidson</h3>
                         <p>
@@ -41,7 +46,9 @@ const CarouselTestimonials = () => {
                 </>
                 <>
                 <div>
+           
                     <img src={avatar2} alt="Avatar with glasses" />
+
                     <div className="custom-carousel">
                         <h3>Kate Wharton</h3>
                         <p>
@@ -52,7 +59,9 @@ const CarouselTestimonials = () => {
                 </>
                 <>
                 <div>
+       
                     <img src={avatar2} alt="Avatar with glasses" />
+
                     <div className="custom-carousel">
                         <h3>Elise St Hilaire</h3>
                         <p>
@@ -64,6 +73,7 @@ const CarouselTestimonials = () => {
                 </>
                 </Carousel>
             </div>
+            
         </div>
     );
 }

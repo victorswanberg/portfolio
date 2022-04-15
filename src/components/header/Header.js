@@ -2,6 +2,7 @@ import React from 'react';
 import './header.scss';
 import Typed from 'react-typed';
 import Particles from 'react-tsparticles';
+import Zoom from 'react-reveal/Zoom';
 
 const Header = () => {
     return (
@@ -10,21 +11,23 @@ const Header = () => {
                 className="particles-canvas"
                 options={options}
             />
-            <div className="main-info">
-              <div className="box-set">
-                <h1 className="neon-text-header">Code Vibes by Victor Swanberg</h1> 
-                <Typed
-                    className="typed-text"
-                    strings={["Web developer", "E-learning developer", "Accessibility expert", "UX/UIX in mind", "Coding instuctor", "Peer mentor"]}
-                    typeSpeed={25}
-                    backSpeed={25}
-                    loop
-                />
-                <div className="mt-4 mb-4">
-                  <a href="#contact" className="btn-main-offer">Contact Me</a>
-                </div>  
+            <Zoom>
+              <div className="main-info">
+                <div className="box-set">
+                  <h1 className="neon-text-header">Code Vibes by Victor Swanberg</h1> 
+                  <Typed
+                      className="typed-text"
+                      strings={["Web developer", "E-learning developer", "Accessibility expert", "UX/UIX in mind", "Coding instuctor", "Peer mentor"]}
+                      typeSpeed={25}
+                      backSpeed={25}
+                      loop
+                  />
+                  <div className="mt-4 mb-4">
+                    <a href="#contact" className="btn-main-offer">Contact Me</a>
+                  </div>  
+                </div>
               </div>
-            </div>
+            </Zoom>
         </div>
     )
 }

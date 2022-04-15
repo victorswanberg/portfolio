@@ -10,7 +10,7 @@ const Navbar = () => {
  return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div className="container">
-      <a className="navbar-brand" href="www.victorswanberg.dev">
+      <a className="navbar-brand" href="https://www.victorswanberg.dev">
         <img className="logo" src={logo} alt="Code Vibes Consulting" />
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

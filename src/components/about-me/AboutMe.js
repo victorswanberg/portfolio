@@ -1,6 +1,7 @@
 import React from 'react';
 import './about-me.scss'
 import author from '../../assets/about-me/vic.jpg';
+import Zoom from 'react-reveal/Zoom';
 
 const AboutMe = () => {
     return (
@@ -8,9 +9,11 @@ const AboutMe = () => {
             <div className="row no-gutter">
                 {/* Center when in mobile? */}
                 <div className="col-lg-6 col-xm-12 my-auto">
-                    <div className="photo-wrapper">
-                        <img className="profile-img" src={author} alt="Victor Swanberg"/>
-                    </div>
+                    <Zoom>
+                        <div className="photo-wrapper">
+                            <img className="profile-img" src={author} alt="Victor Swanberg"/>
+                        </div>
+                    </Zoom>
                 </div>
                 <div className="col-lg-6 col-xm-12">
                     <h1 className="profile-header mb-1">About me</h1>

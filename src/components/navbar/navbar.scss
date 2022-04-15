@@ -21,6 +21,7 @@ nav {
         margin-left: .75rem;
         border-top: 0.175rem solid var(--primary-dark); 
         font-weight: 500;
+        border-bottom: 0.175rem solid transparent;
         letter-spacing: 0.375rem;
         cursor: pointer;
         // Change it to active in nav when first visit/

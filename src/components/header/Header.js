@@ -3,6 +3,7 @@ import './header.scss';
 import Typed from 'react-typed';
 import Particles from 'react-tsparticles';
 import Zoom from 'react-reveal/Zoom';
+import {Link} from 'react-scroll';
 
 const Header = () => {
     return (
@@ -23,7 +24,8 @@ const Header = () => {
                       loop
                   />
                   <div className="mt-4 mb-4">
-                    <a href="#contact" className="btn-main-offer">Contact Me</a>
+                  <Link smooth={true} to="contact" offset={-110} href="#" className="btn-main-offer">
+                   Contact Me</Link>
                   </div>  
                 </div>
               </div>

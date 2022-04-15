@@ -2,8 +2,8 @@ import React from 'react';
 import './portfolio.scss';
 import { Card, Button } from 'react-bootstrap'
 import triplexxx from '../../assets/portfolio/triplexxx.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Portfolio = () => {
     return(
@@ -37,7 +37,7 @@ const Portfolio = () => {
               
                 </div>
                 {/*  */}
-                 <div className="col-lg-4 col-md-5 mb-3">
+                 {/* <div className="col-lg-4 col-md-5 mb-3">
                   
                         <Card className="h-100">
                         <Card.Img variant="top" src={triplexxx} />
@@ -50,7 +50,7 @@ const Portfolio = () => {
                                 <Button variant="primary">Review</Button>
                             </Card.Body>
                         </Card> 
-                    </div>
+                    </div> */}
   
             </div>
 

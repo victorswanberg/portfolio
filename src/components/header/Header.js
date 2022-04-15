@@ -17,9 +17,9 @@ const Header = () => {
                   <h1 className="neon-text-header">Code Vibes by Victor Swanberg</h1> 
                   <Typed
                       className="typed-text"
-                      strings={["Web developer", "E-learning developer", "Accessibility expert", "UX/UIX in mind", "Coding instuctor", "Peer mentor"]}
-                      typeSpeed={25}
-                      backSpeed={25}
+                      strings={["Web developer", "E-learning developer", "Accessibility expert", "UX/UIX in mind", "Coding instructor", "Peer mentor"]}
+                      typeSpeed={50}
+                      backSpeed={50}
                       loop
                   />
                   <div className="mt-4 mb-4">

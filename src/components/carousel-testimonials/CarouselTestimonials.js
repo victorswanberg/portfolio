@@ -71,6 +71,19 @@ const CarouselTestimonials = () => {
                     </div>
                 </div>
                 </>
+                <>
+                <div>
+                    <Fade>
+                    <img src={avatar3} alt="Avatar with glasses" />
+                    </Fade>
+                    <div className="custom-carousel">
+                        <h3>Mike Koplitz</h3>
+                        <p className="px-3 px-md-0">
+                        Victor was a great addition to our team. He has a positive attitude, creative and is always willing to help others and is creative at looking at new ways to do things. He’s definitely a go getter, eager to take on any challenge. And always has the best interest of the company in mind. I would take any opportunity to work with Victor again. And any organization would be lucky to have him on their team.
+                        </p>
+                    </div>
+                </div>
+                </>
                 </Carousel>
             </div>
             
